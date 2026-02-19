@@ -1,0 +1,12 @@
+apiVersion: v2
+name: flask-minimal
+description: A Helm chart for Flask minimal application
+type: application
+version: 1.0.0
+appVersion: "1.0"
+keywords:
+  - flask
+  - python
+home: https://github.com/Yashwani14/flask-minimal
+maintainers:
+  - name: Yashwani14

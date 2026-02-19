@@ -14,18 +14,18 @@ spec:
     spec:
       containers:
       - name: flask-demo
-        image: acrcreate.azurecr.io/flask-minimal:v1
+        image: polu99/python-web-app
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
         readinessProbe:
           httpGet:
-            path: /
-            port: 8080
+            path: /health
+            port: 5000
           initialDelaySeconds: 5
           periodSeconds: 10
         livenessProbe:
           httpGet:
-            path: /
-            port: 8080
+            path: /health
+            port: 5000
           initialDelaySeconds: 10
           periodSeconds: 20
